@@ -2,7 +2,6 @@ import React from 'react'
 import User from '../../datacenter/user-datacenter'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField'
-import Home from '../../container/home/home'
 
 class Component extends React.Component {
     handleLogin = () => {
@@ -13,7 +12,10 @@ class Component extends React.Component {
         } else {
             var checkUser = User.find(i => i.account.email === txtEmail.value && i.account.password === txtPass.value)
             if (checkUser) {
-                console.log(checkUser)
+                localStorage.setItem('sudah login', "true")
+                setTimeout(() => {
+                    window.location.href = "/home"
+                }, 1000);
             }
             else {
                 alert('password dan email salah');
