@@ -37,17 +37,13 @@ class Component extends React.Component {
       <Container component="main" maxWidth="xs" className={classes.container}>
         <div className={classes.form}>
           <TextField
-            multiline
-            rowsMax="4"
-            placeholder="email"
+            label="email"
             id="txtEmail"
             className={classes.textField}
             margin="normal"
           />
           <TextField
-            multiline
-            rowsMax="4"
-            placeholder="password"
+            label="password"
             id="txtPass"
             className={classes.textField}
             margin="normal"
