@@ -1,17 +1,12 @@
 const styles = theme => ({
-  textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
-    width: 200
-  },
-  form: {
+  button: {
     justifyContent: 'center',
-    display: 'flex',
-    marginLeft: 20,
-    marginRight: 20,
-    marginTop: 200
+    display: 'flex'
   },
-
+  welcome: {
+    justifyContent: 'center',
+    display: 'flex'
+  },
   container: {
     marginBottom: 56,
     padding: 0
