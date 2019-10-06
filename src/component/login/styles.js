@@ -9,7 +9,7 @@ const styles = theme => ({
     display: 'flex',
     marginLeft: 20,
     marginRight: 20,
-    marginTop: 100
+    marginTop: 200
   },
 
   container: {
