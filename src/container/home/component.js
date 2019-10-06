@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 
 class Component extends React.Component {
   handlelogout = () => {
@@ -11,17 +13,21 @@ class Component extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
-        <h1>selamat datang</h1>
-        <div>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={this.handlelogout}>
-            Logout
-          </Button>
-        </div>
-      </div>
+      <Container component="main" maxWidth="xs" className={classes.container}>
+        <Grid container spacing={0}>
+          <Grid item xs={12} className={classes.welcome}>
+            <h1>selamat datang</h1>
+          </Grid>
+          <Grid item xs={12} className={classes.button}>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.handlelogout}>
+              Logout
+            </Button>
+          </Grid>
+        </Grid>
+      </Container>
     );
   }
 }
